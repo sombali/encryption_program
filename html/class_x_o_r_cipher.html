@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>titkosito: XORCipher osztÃ¡lyreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">titkosito
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- KÃ©szÃ­tette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'KeresÃ©s');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','KeresÃ©s');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Publikus tagfÃ¼ggvÃ©nyek</a> &#124;
+<a href="class_x_o_r_cipher-members.html">A tagok teljes listÃ¡ja</a>  </div>
+  <div class="headertitle">
+<div class="title">XORCipher osztÃ¡lyreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="cipher_8h_source.html">cipher.h</a>&gt;</code></p>
+<div class="dynheader">
+A XORCipher osztÃ¡ly szÃ¡rmazÃ¡si diagramja:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_x_o_r_cipher.png" usemap="#XORCipher_map" alt=""/>
+  <map id="XORCipher_map" name="XORCipher_map">
+<area href="class_cipher.html" alt="Cipher" shape="rect" coords="0,0,77,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Publikus tagfÃ¼ggvÃ©nyek</h2></td></tr>
+<tr class="memitem:ac8ac09a4fcac428386935c31dea03768"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_o_r_cipher.html#ac8ac09a4fcac428386935c31dea03768">encrypt</a> (char *plainText, char *cipherKey, int length)</td></tr>
+<tr class="separator:ac8ac09a4fcac428386935c31dea03768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3afeef39c53f0345163a6e46aac25b3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_x_o_r_cipher.html#ab3afeef39c53f0345163a6e46aac25b3">decrypt</a> (char *cipherText, char *cipherKey, int length)</td></tr>
+<tr class="separator:ab3afeef39c53f0345163a6e46aac25b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">RÃ©szletes leÃ­rÃ¡s</h2>
+<div class="textblock"><p>XOR titkosító osztály. Õ végzi a XOR titkosítást és visszafejtést. </p>
+</div><h2 class="groupheader">TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja</h2>
+<a id="ab3afeef39c53f0345163a6e46aac25b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3afeef39c53f0345163a6e46aac25b3">&#9670;&nbsp;</a></span>decrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * XORCipher::decrypt </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cipherText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cipherKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Az abstract osztály virtuális visszafejtõ metódusa. A paraméterül kapott értéket a paraméterül kapott titkos kulccsal visszafejti eredeti állapotába.</p>
+<dl class="params"><dt>ParamÃ©terek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cipherText</td><td>A titkosított szöveg </td></tr>
+    <tr><td class="paramname">cipherKey</td><td>A titkos kulcs </td></tr>
+    <tr><td class="paramname">length</td><td>A titkosított szöveg hossza </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>VisszatÃ©rÃ©si Ã©rtÃ©k</dt><dd>A visszafejtett szöveg </dd></dl>
+
+<p>MegvalÃ³sÃ­tja a kÃ¶vetkezÅ‘ket: <a class="el" href="class_cipher.html#a39b1608e01f73f75ee248ef566aa44f9">Cipher</a>.</p>
+
+</div>
+</div>
+<a id="ac8ac09a4fcac428386935c31dea03768"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ac09a4fcac428386935c31dea03768">&#9670;&nbsp;</a></span>encrypt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * XORCipher::encrypt </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>plainText</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>cipherKey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Az abstract osztály virtuális titkosító metódusa. A paraméterül kapott értéket a szintén paraméterül kapott titkos kulccsal titkosítja.</p>
+<dl class="params"><dt>ParamÃ©terek</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plainText</td><td>A titkosítandó szöveg </td></tr>
+    <tr><td class="paramname">cipherKey</td><td>A titkos kulcs </td></tr>
+    <tr><td class="paramname">length</td><td>A titkosítandó szöveg hossza </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>VisszatÃ©rÃ©si Ã©rtÃ©k</dt><dd>A titkosított szöveg </dd></dl>
+
+<p>MegvalÃ³sÃ­tja a kÃ¶vetkezÅ‘ket: <a class="el" href="class_cipher.html#a8a1970fdcb363529590299f14a6f2571">Cipher</a>.</p>
+
+</div>
+</div>
+<hr/>Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt:<ul>
+<li><a class="el" href="cipher_8h_source.html">cipher.h</a></li>
+<li>cipher.cpp</li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+KÃ©szÃ­tette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

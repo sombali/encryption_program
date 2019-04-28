@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1494275995 source:d:\2.felev\programozás alapjai 2\hazi\titkosito\main.cpp
+	<iostream>
+	"cipher.h"
+	"test.h"
+
+1494280215 d:\2.felev\programozás alapjai 2\hazi\titkosito\cipher.h
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<stdexcept>
+	"memtrace.h"
+
+1494279202 d:\2.felev\programozás alapjai 2\hazi\titkosito\cipherstring.h
+	<iostream>
+	"cipher.h"
+	<cstring>
+	"memtrace.h"
+
+1494278860 d:\2.felev\programozás alapjai 2\hazi\titkosito\test.h
+	<iostream>
+	"cipher.h"
+	"cipherstring.h"
+	<stdexcept>
+	"memtrace.h"
+
+1494089045 d:\2.felev\programozás alapjai 2\hazi\titkosito\memtrace.h
+	<new>
+	<stdlib.h>
+	<iostream>
+	<fstream>
+
+1494089241 source:d:\2.felev\programozás alapjai 2\hazi\titkosito\memtrace.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	<ctype.h>
+	"memtrace.h"
+
+1494275340 source:d:\2.felev\programozás alapjai 2\hazi\titkosito\cipher.cpp
+	<iostream>
+	<stdlib.h>
+	<cstring>
+	<stdexcept>
+	"cipher.h"
+	"cipherstring.h"
+	"memtrace.h"
+
+1494115765 source:d:\2.felev\programozás alapjai 2\hazi\titkosito\cipherstring.cpp
+	<iostream>
+	"cipher.h"
+	<cstring>
+	"cipherstring.h"
+	"memtrace.h"
+
+1494279582 source:d:\2.felev\programozás alapjai 2\hazi\titkosito\test.cpp
+	<iostream>
+	"cipherstring.h"
+	"test.h"
+

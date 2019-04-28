@@ -1,0 +1,116 @@
+\hypertarget{class_cipher_string}{}\section{Cipher\+String osztályreferencia}
+\label{class_cipher_string}\index{Cipher\+String@{Cipher\+String}}
+
+
+{\ttfamily \#include $<$cipherstring.\+h$>$}
+
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_cipher_string_a78d5c6bcc232f0c2cde34d5706107127}{Cipher\+String} ()
+\item 
+char $\ast$ \hyperlink{class_cipher_string_ad697651cb43128c9f980a00f2fd31c69}{caesar\+Encrypt} (char $\ast$plain\+String\+In, char $\ast$cipher\+Key)
+\item 
+char $\ast$ \hyperlink{class_cipher_string_abb9c46f5902c8d3cf58f1adbbe571e58}{xor\+Encrypt} (char $\ast$plain\+String\+In, char $\ast$cipher\+Key)
+\item 
+char $\ast$ \hyperlink{class_cipher_string_a06310ff798cab137ae7faa769fc512d8}{caesar\+Decrypt} (char $\ast$cipher\+Key)
+\item 
+char $\ast$ \hyperlink{class_cipher_string_a9d8689809d1e4e77867466e56335977d}{xor\+Decrypt} (char $\ast$cipher\+Key)
+\item 
+virtual \hyperlink{class_cipher_string_a805b365286a97e096db9c04b555f3ef9}{$\sim$\+Cipher\+String} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Részletes leírás}
+\hyperlink{class_cipher}{Cipher} String oszt�ály. Ő tárolja a titkosított szöveget és a hosszát. Referenciával rendelkezik a titkosítákra. Az ő segítségükkel titkosítja a kapott szöveget. 
+
+\subsection{Konstruktorok és destruktorok dokumentációja}
+\mbox{\Hypertarget{class_cipher_string_a78d5c6bcc232f0c2cde34d5706107127}\label{class_cipher_string_a78d5c6bcc232f0c2cde34d5706107127}} 
+\index{Cipher\+String@{Cipher\+String}!Cipher\+String@{Cipher\+String}}
+\index{Cipher\+String@{Cipher\+String}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{Cipher\+String()}{CipherString()}}
+{\footnotesize\ttfamily Cipher\+String\+::\+Cipher\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Publikus, paraméter nélküli konstruktor \mbox{\Hypertarget{class_cipher_string_a805b365286a97e096db9c04b555f3ef9}\label{class_cipher_string_a805b365286a97e096db9c04b555f3ef9}} 
+\index{Cipher\+String@{Cipher\+String}!````~Cipher\+String@{$\sim$\+Cipher\+String}}
+\index{````~Cipher\+String@{$\sim$\+Cipher\+String}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{$\sim$\+Cipher\+String()}{~CipherString()}}
+{\footnotesize\ttfamily virtual Cipher\+String\+::$\sim$\+Cipher\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destruktor. 
+
+\subsection{Tagfüggvények dokumentációja}
+\mbox{\Hypertarget{class_cipher_string_a06310ff798cab137ae7faa769fc512d8}\label{class_cipher_string_a06310ff798cab137ae7faa769fc512d8}} 
+\index{Cipher\+String@{Cipher\+String}!caesar\+Decrypt@{caesar\+Decrypt}}
+\index{caesar\+Decrypt@{caesar\+Decrypt}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{caesar\+Decrypt()}{caesarDecrypt()}}
+{\footnotesize\ttfamily char $\ast$ Cipher\+String\+::caesar\+Decrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{cipher\+Key }\end{DoxyParamCaption})}
+
+Caesar visszafejtő metódus, a paraméterül kapott kulccsal visszafejti az osztályban tárolt titkos szöveget.
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Az osztály által tárolt szöveg visszafejtett változata 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cipher_string_ad697651cb43128c9f980a00f2fd31c69}\label{class_cipher_string_ad697651cb43128c9f980a00f2fd31c69}} 
+\index{Cipher\+String@{Cipher\+String}!caesar\+Encrypt@{caesar\+Encrypt}}
+\index{caesar\+Encrypt@{caesar\+Encrypt}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{caesar\+Encrypt()}{caesarEncrypt()}}
+{\footnotesize\ttfamily char $\ast$ Cipher\+String\+::caesar\+Encrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{plain\+String\+In,  }\item[{char $\ast$}]{cipher\+Key }\end{DoxyParamCaption})}
+
+Caesar Titkosító metódus, a paraméterül kapott értéket a szintén paraméterül kapott kulccsal titkosítja.
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em plain\+String\+In} & A titkosítandó szüöveg \\
+\hline
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A titkosított szöveg 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cipher_string_a9d8689809d1e4e77867466e56335977d}\label{class_cipher_string_a9d8689809d1e4e77867466e56335977d}} 
+\index{Cipher\+String@{Cipher\+String}!xor\+Decrypt@{xor\+Decrypt}}
+\index{xor\+Decrypt@{xor\+Decrypt}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{xor\+Decrypt()}{xorDecrypt()}}
+{\footnotesize\ttfamily char $\ast$ Cipher\+String\+::xor\+Decrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{cipher\+Key }\end{DoxyParamCaption})}
+
+X\+OR visszafejtő metódus, a paraméterül kapott kulccsal visszafejti az osztályban tárolt titkos szöveget.
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Az osztály álatal tűrolt szöveg visszafejtett változata 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cipher_string_abb9c46f5902c8d3cf58f1adbbe571e58}\label{class_cipher_string_abb9c46f5902c8d3cf58f1adbbe571e58}} 
+\index{Cipher\+String@{Cipher\+String}!xor\+Encrypt@{xor\+Encrypt}}
+\index{xor\+Encrypt@{xor\+Encrypt}!Cipher\+String@{Cipher\+String}}
+\subsubsection{\texorpdfstring{xor\+Encrypt()}{xorEncrypt()}}
+{\footnotesize\ttfamily char $\ast$ Cipher\+String\+::xor\+Encrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{plain\+String\+In,  }\item[{char $\ast$}]{cipher\+Key }\end{DoxyParamCaption})}
+
+X\+OR Titkosító metódus, a paraméterül kapott értéket a szintén paraméterül kapott kulccsal titkosítja.
+
+
+\begin{DoxyParams}{Paraméterek}
+{\em plain\+String\+In} & A titkosítandó szöveg \\
+\hline
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A titkosított szöveg 
+\end{DoxyReturn}
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+cipherstring.\+h\item 
+cipherstring.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>titkosito: cipherstring.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">titkosito
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Keresés');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cipherstring.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CIPHERSTRING_H_INCLUDED</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CIPHERSTRING_H_INCLUDED</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;cipher.h&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;memtrace.h&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_cipher_string.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cipher_string.html">CipherString</a> {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_cipher.html">Cipher</a>* cipher[2];</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">char</span>* cipherString;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">int</span> length;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_cipher_string.html#a78d5c6bcc232f0c2cde34d5706107127">   23</a></span>&#160;    <a class="code" href="class_cipher_string.html#a78d5c6bcc232f0c2cde34d5706107127">CipherString</a>() {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        this-&gt;cipherString = NULL;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        this-&gt;cipher[0] = <span class="keyword">new</span> <a class="code" href="class_caesar_cipher.html">CaesarCipher</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        this-&gt;cipher[1] = <span class="keyword">new</span> <a class="code" href="class_x_o_r_cipher.html">XORCipher</a>();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_cipher_string.html#ad697651cb43128c9f980a00f2fd31c69">caesarEncrypt</a>(<span class="keywordtype">char</span>* plainStringIn, <span class="keywordtype">char</span>* cipherKey);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_cipher_string.html#abb9c46f5902c8d3cf58f1adbbe571e58">xorEncrypt</a>(<span class="keywordtype">char</span>* plainStringIn, <span class="keywordtype">char</span>* cipherKey);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_cipher_string.html#a06310ff798cab137ae7faa769fc512d8">caesarDecrypt</a>(<span class="keywordtype">char</span>* cipherKey);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">char</span>* <a class="code" href="class_cipher_string.html#a9d8689809d1e4e77867466e56335977d">xorDecrypt</a>(<span class="keywordtype">char</span>* cipherKey);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_cipher_string.html#a805b365286a97e096db9c04b555f3ef9">   66</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_cipher_string.html#a805b365286a97e096db9c04b555f3ef9">~CipherString</a>() {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">delete</span>[] this-&gt;cipherString;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; 2; i++) {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">delete</span> this-&gt;cipher[i];</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> deleteCipherStringIfNotNullPtr() {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span>(this-&gt;cipherString != NULL) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">delete</span>[] this-&gt;cipherString;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">char</span> operator[](<span class="keywordtype">int</span> i) {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span> cipherString[i];</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif // CIPHERSTRING_H_INCLUDED</span></div><div class="ttc" id="class_cipher_string_html_a9d8689809d1e4e77867466e56335977d"><div class="ttname"><a href="class_cipher_string.html#a9d8689809d1e4e77867466e56335977d">CipherString::xorDecrypt</a></div><div class="ttdeci">char * xorDecrypt(char *cipherKey)</div><div class="ttdef"><b>Definition:</b> cipherstring.cpp:28</div></div>
+<div class="ttc" id="class_cipher_string_html_a78d5c6bcc232f0c2cde34d5706107127"><div class="ttname"><a href="class_cipher_string.html#a78d5c6bcc232f0c2cde34d5706107127">CipherString::CipherString</a></div><div class="ttdeci">CipherString()</div><div class="ttdef"><b>Definition:</b> cipherstring.h:23</div></div>
+<div class="ttc" id="class_cipher_string_html_ad697651cb43128c9f980a00f2fd31c69"><div class="ttname"><a href="class_cipher_string.html#ad697651cb43128c9f980a00f2fd31c69">CipherString::caesarEncrypt</a></div><div class="ttdeci">char * caesarEncrypt(char *plainStringIn, char *cipherKey)</div><div class="ttdef"><b>Definition:</b> cipherstring.cpp:8</div></div>
+<div class="ttc" id="class_cipher_string_html_abb9c46f5902c8d3cf58f1adbbe571e58"><div class="ttname"><a href="class_cipher_string.html#abb9c46f5902c8d3cf58f1adbbe571e58">CipherString::xorEncrypt</a></div><div class="ttdeci">char * xorEncrypt(char *plainStringIn, char *cipherKey)</div><div class="ttdef"><b>Definition:</b> cipherstring.cpp:15</div></div>
+<div class="ttc" id="class_cipher_html"><div class="ttname"><a href="class_cipher.html">Cipher</a></div><div class="ttdef"><b>Definition:</b> cipher.h:14</div></div>
+<div class="ttc" id="class_cipher_string_html"><div class="ttname"><a href="class_cipher_string.html">CipherString</a></div><div class="ttdef"><b>Definition:</b> cipherstring.h:14</div></div>
+<div class="ttc" id="class_x_o_r_cipher_html"><div class="ttname"><a href="class_x_o_r_cipher.html">XORCipher</a></div><div class="ttdef"><b>Definition:</b> cipher.h:55</div></div>
+<div class="ttc" id="class_cipher_string_html_a06310ff798cab137ae7faa769fc512d8"><div class="ttname"><a href="class_cipher_string.html#a06310ff798cab137ae7faa769fc512d8">CipherString::caesarDecrypt</a></div><div class="ttdeci">char * caesarDecrypt(char *cipherKey)</div><div class="ttdef"><b>Definition:</b> cipherstring.cpp:22</div></div>
+<div class="ttc" id="class_caesar_cipher_html"><div class="ttname"><a href="class_caesar_cipher.html">CaesarCipher</a></div><div class="ttdef"><b>Definition:</b> cipher.h:45</div></div>
+<div class="ttc" id="class_cipher_string_html_a805b365286a97e096db9c04b555f3ef9"><div class="ttname"><a href="class_cipher_string.html#a805b365286a97e096db9c04b555f3ef9">CipherString::~CipherString</a></div><div class="ttdeci">virtual ~CipherString()</div><div class="ttdef"><b>Definition:</b> cipherstring.h:66</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

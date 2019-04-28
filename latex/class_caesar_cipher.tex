@@ -1,0 +1,79 @@
+\hypertarget{class_caesar_cipher}{}\section{Caesar\+Cipher osztÃ¡lyreferencia}
+\label{class_caesar_cipher}\index{Caesar\+Cipher@{Caesar\+Cipher}}
+
+
+{\ttfamily \#include $<$cipher.\+h$>$}
+
+A Caesar\+Cipher osztÃ¡ly szÃ¡rmazÃ¡si diagramja\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_caesar_cipher}
+\end{center}
+\end{figure}
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \hyperlink{class_caesar_cipher_a394b73bf4835730e07f58945c0b0747a}{encrypt} (char $\ast$plain\+Text, char $\ast$cipher\+Key, int length)
+\item 
+char $\ast$ \hyperlink{class_caesar_cipher_a6362cea25d4027a1e1e9944739b4f33f}{decrypt} (char $\ast$cipher\+Text, char $\ast$cipher\+Key, int length)
+\end{DoxyCompactItemize}
+
+
+\subsection{RÃ©szletes leÃ­rÃ¡s}
+Caesar titkosító osztály. Õ végzi a Caesar titkosítást és visszafejtést. 
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\mbox{\Hypertarget{class_caesar_cipher_a6362cea25d4027a1e1e9944739b4f33f}\label{class_caesar_cipher_a6362cea25d4027a1e1e9944739b4f33f}} 
+\index{Caesar\+Cipher@{Caesar\+Cipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!Caesar\+Cipher@{Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily char $\ast$ Caesar\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{cipher\+Text,  }\item[{char $\ast$}]{cipher\+Key,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Az abstract osztály virtuális visszafejtõ metódusa. A paraméterül kapott értéket a paraméterül kapott titkos kulccsal visszafejti eredeti állapotába.
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em cipher\+Text} & A titkosított szöveg \\
+\hline
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+{\em length} & A titkosított szöveg hossza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+A visszafejtett szöveg 
+\end{DoxyReturn}
+
+
+MegvalÃ³sÃ­tja a kÃ¶vetkezÅ‘ket\+: \hyperlink{class_cipher_a39b1608e01f73f75ee248ef566aa44f9}{Cipher}.
+
+\mbox{\Hypertarget{class_caesar_cipher_a394b73bf4835730e07f58945c0b0747a}\label{class_caesar_cipher_a394b73bf4835730e07f58945c0b0747a}} 
+\index{Caesar\+Cipher@{Caesar\+Cipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!Caesar\+Cipher@{Caesar\+Cipher}}
+\subsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily char $\ast$ Caesar\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{char $\ast$}]{plain\+Text,  }\item[{char $\ast$}]{cipher\+Key,  }\item[{int}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Az abstract osztály virtuális titkosító metódusa. A paraméterül kapott értéket a szintén paraméterül kapott titkos kulccsal titkosítja.
+
+
+\begin{DoxyParams}{ParamÃ©terek}
+{\em plain\+Text} & A titkosítandó szöveg \\
+\hline
+{\em cipher\+Key} & A titkos kulcs \\
+\hline
+{\em length} & A titkosítandó szöveg hossza \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+A titkosított szöveg 
+\end{DoxyReturn}
+
+
+MegvalÃ³sÃ­tja a kÃ¶vetkezÅ‘ket\+: \hyperlink{class_cipher_a8a1970fdcb363529590299f14a6f2571}{Cipher}.
+
+
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+cipher.\+h\item 
+cipher.\+cpp\end{DoxyCompactItemize}
